@@ -17,11 +17,11 @@ class Post extends Model
 
     public function user(){
 
-        return $this->belongsTo('App\User');
+        return $this->belongsTo('App\User')->withDefault();
     }
     public function photo(){
 
-        return $this->belongsTo('App\Photo');
+        return $this->belongsTo('App\Photo')->withDefault();
     }
     public function category(){
 
